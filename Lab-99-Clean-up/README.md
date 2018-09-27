@@ -5,7 +5,7 @@ Congratulations. You have successfully helped the team at catsndogs.lol build a 
 1.	Delete the ECS Cluster. This will also delete all the ECS Tasks and Services within the cluster.
 2.	If it exists, delete the Auto Scaling Group ECS-On-Demand-Group
 3.	If it exists, delete the Launch Configuration On-Demand-ECS
-4.	Verify the cats, dogs, simplehomepage, MXnet, and ImageAssessor tasks are deleted.
+4.	Verify the cats, dogs, simplehomepage, MXnet, and ImageAssessor task definitions are deleted (this is done by deregistering them).
 5.	Delete the cats, dogs and simplehomepage ECR repositories if they exist.
 6.	Delete the Parameter Store secure string named UnicornLocation.
 7.	Delete the CloudWatch events ImageAssessor and HandleECSEvents
@@ -24,12 +24,14 @@ Congratulations. You have successfully helped the team at catsndogs.lol build a 
 12.	Delete the CloudFormation stacks you created. Because later labs rely on the stacks from earlier labs, you should delete the Lab0 stack only after the others have reached the DELETE_COMPLETE state:
 
     a.	Lab7: catsndogsECStasksandservices-green
+    
+    b.  Lab 6: catsndogs-ide
 
-    b.	Lab2: Lab2-create-ecs-tasks-and-services and Lab2-loadgenerator
+    c.	Lab2: Lab2-create-ecs-tasks-and-services and Lab2-loadgenerator
 
-    c.	Lab1: Lab1-add-ondemand-asg-to-cluster
+    d.	Lab1: Lab1-add-ondemand-asg-to-cluster
 
-    d.	Lab0: catsndogssetup
+    e.	Lab0: catsndogssetup
 
 Feedback? Comments? catsndogs@amazon.com
 
